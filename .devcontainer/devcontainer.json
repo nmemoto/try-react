@@ -1,0 +1,19 @@
+{
+    "name": "try-react",
+    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16",
+    "features": {
+        "common": {
+            "username": "vscode"
+        },
+        "github-cli": "latest"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh"
+}
